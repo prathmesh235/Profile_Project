@@ -1,0 +1,261 @@
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 40%;
+    margin: 20px auto;
+    border-top:1px solid #ccc;
+}
+
+h1, h2 {
+    font-weight:850;
+}
+
+p, a{
+    font-weight: 600;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.fas, .fab {
+    margin-right: 1px;
+    color: inherit;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.email-icon {
+    background-color: #dd4b39;
+    width: 20;
+}
+
+.linkedin-icon {
+    background-color: #0e76a8;
+    width: 20;
+}
+
+.icon-link:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+header, footer {
+    background: linear-gradient(to right, #831bcd, #f9620b);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    width:100%;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 800%;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skills-list li {
+    list-style-type: none;
+    background: #94979b;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    animation: bounce 1s infinite alternate;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    width: 100px;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+form input[type="text"],form input[type="email"], form textarea, form button {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+form button {
+    background-image: linear-gradient(to right, #831bcd, #f9620b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-image: linear-gradient(to right,#f9620b, #831bcd);
+}
+
+@media only screen and(max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and(max-width: 480px) {
+    header, footer {
+        padding: 15px;
+    }
+}
+
+section, form {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+}
+
+.icon-link {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+h1, h2 {
+    font-size: 30px;
+}
+
+@keyframes bounce {
+    form {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-25px);
+    }
+}
+
+.horizontal-scroll {
+    overflow: hidden;
+    width: 100%;
+}
+
+.icon-container {
+    display: flex;
+    animation: scrollAnimation 10s linear infinite;
+    width: max-content;
+}
+
+.icon-container img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode p {
+    color: #fff;
+}
+
+
+#programming-languages{
+    width:35%;
+    margin:50px auto;
+}
+
+#programming-languages h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill p{
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.progress-bar{
+    width:100%;
+    height:25px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(to right,#8e2de2,#ff5f06);
+    color:white;
+    text-align:center;
+    line-height:25px;
+    font-weight:bold;
+}
